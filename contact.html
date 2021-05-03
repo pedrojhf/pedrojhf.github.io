@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es"> 
+	<head>
+		<title>Contacto</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+		<link rel="icon" href="img/favicon.ico" type="img/x-icon">
+		<link rel="stylesheet" href="css/style.css">
+		<style> body { background-color: #00775a; }</style>
+	</head>
+  
+	<body>
+		<header>
+		<section>
+			<a href="index.html" id="logo" target="_blank">Open System Consulting</a>
+			<nav>
+			<ul>
+				<li><a href="index.html">Inicio</a></li>
+				<li><a href="servicios.html">Servicios</a></li>
+				<li><a href="proyecto.html">Proyectos</a></li>
+				<li><a href="producto.html">Producto</a></li>
+				<li><a href="blog.html">Blog</a></li>
+				<li><a href="contact.html">Contacto</a></li>
+				<li><a href="login.html">Login</a></li>
+			</ul>
+			</nav>
+		</header>
+		<div class="container-portada-1">
+			<div class="capa-gradient">
+				<div class="container-details">
+					<div class="details">
+						<h1><span>Contacto</span></h1>
+						<p>
+							<a class="linkemail"href="mailto:opensystmconsulting@gmial.com">opensystmconsulting@gmial.com </a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		</section>
+	  <br><br><br>
+<br><br><br><br><br>
+			<!-- Mapa para localización del proyecto -->
+			<div class="contactall">
+				<div class="contactmap">
+					<div class="maps">
+						<iframe class="map" 
+							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24281.339551646513!2d-3.6821623915863877!3d40.47156050478308!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4229144b52fc01%3A0x6e1ce19bfaf6e4c8!2sT%20Systems!5e0!3m2!1ses!2ses!4v1615701978384!5m2!1ses!2ses"
+							 width=100% height="300px" style="border:0;" allowfullscreen="" loading="lazy">
+						</iframe>
+					</div>
+				</div>
+			</div>
+			<!-- Inicio del form(formulario) opensystmconsulting@gmial.com -->
+			<form action="mailto:opensystmconsulting@gmial.com">
+				<!-- Primero agrupamos todo en un mismo div, para luego poder tenerlo colocado y poder darle forma -->
+				<div class="contactall">
+					<h2>Contacte con nosotros</h2>
+
+						<div class="contact10">
+							<div class="col">
+								<div class="inputBox">
+									<input id="name" type="text" required="required" autocomplete="off">
+									<span class="info">Nombre</span>
+									<span class="line">
+								</div>
+							</div>
+							<div class="col">
+								<div class="inputBox">
+									<input id="name2" type="text" required="required" autocomplete="off">
+									<span class="info">Apellido</span>
+									<span class="line">
+								</div>
+							</div>
+						</div>
+
+						<div class="contact10">
+							<div class="col">
+								<div class="inputBox">
+									<input id="email" type="text" required="required" autocomplete="off">
+									<span class="info">Email</span>
+									<span class="line">
+								</div>
+							</div>
+							<div class="col">
+								<div class="inputBox">
+									<input id="telef" type="text" required="required" autocomplete="off">
+									<span class="info">Telefono</span>
+									<span class="line">
+								</div>
+							</div>
+						</div>
+
+						<div class="contact10">
+							<div class="col">
+								<div class="inputBox">
+									<input id="post" type="text" required="required" autocomplete="off">
+									<span class="info">Código Postal</span>
+									<span class="line">
+								</div>
+							</div>
+							<div class="col">
+								<div class="inputBox">
+									<input id="address" type="text" required="required" autocomplete="off">
+									<span class="info">Calle y residencia</span>
+									<span class="line">
+								</div>
+							</div>
+						</div>
+
+						<div class="contact10">
+							<div class="col">
+									<input type="checkbox" id="formul1" name="formul1" value="consultoria">
+									<label for="formul">Consultoría</label><br>
+									<input type="checkbox" id="formul2" name="formul2" value="proyectos">
+									<label for="formul2">Proyectos</label><br>
+									<input type="checkbox" id="formul3" name="formul3" value="otros">
+									<label for="formul3">Otros</label><br>
+									<span class="line">
+							</div>
+						</div>
+
+							<div class="contact10">
+								<div class="col">
+									<div class="inputBox textarea">
+										<textarea id="mess"required="required"></textarea>
+										<span class="info">Mensaje/comentario...</span>
+										<span class="line">
+									</div>
+								</div>
+							</div>
+								<div class="contact10">
+									<div class="col">
+										<input onclick="enviarFormulario()" type="submit" value="Send">
+										<input type="reset" value="Borrar información">
+									</div>
+								</div>
+							</div>
+			</form>	
+	
+	</body>
+	<br><br><br><br>
+	<footer class="footer_area">
+				<div class="container-text">
+					<p>Información legal de la empresa</p>
+				</div>
+				<div class="fusion-footer">
+	<footer id="footer" class="fusion-footer-copyright-area" style="position: relative; z-index: 3;">
+		<div class="fusion-row">
+			<div class="fusion-copyright-content">
+				<div class="fusion-copyright-notice">
+					© Open System Consulting <script>document.write(new Date().getFullYear());</script>   |   <a href="#">Aviso Legal</a>   |   <a href="#">Política de Privacidad</a>   |   <a href="#">Política de Cookies</a>   |   <a href="contacto.html">Mapa del sitio</a>	</div>
+				</div>
+			</div>
+		</div>
+		</div>
+	</footer>
+</html>

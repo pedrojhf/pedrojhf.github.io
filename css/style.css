@@ -1,0 +1,917 @@
+/*------------------------------------------------------------------
+    File Name: style.css
+-------------------------------------------------------------------*/
+@charset "UTF-8";
+
+*{
+	text-decoration:none; list-style:none; margin:0px; padding:0px; outline:none;
+	}
+	
+body{
+	margin:0px; padding:0px; font-family: 'Open Sans', sans-serif;
+ 	background: rgb(255,255,255);
+ 	background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.3) 70%, rgba(0,119,90,1) 100%);
+	}
+	
+	
+section{
+	width:100%; max-width:1600px; margin:0px auto; display:table; position:relative;
+	}
+	
+h1{
+	margin:0px auto; display:table; font-size:26px; padding:40px 0px; color:#fbb907; text-align:center;
+	}
+	
+h1 span{
+	font-weight:500;
+	}
+	
+h4{
+	margin:0px auto; display:table; font-size:18px; color:#fbb907; text-align:center;
+	}
+	
+header{
+	width:100%; display:table; background-color:#333333; margin-bottom:50px;
+	}
+
+/* Menu Area css
+============================================================================================ */
+#logo{float:left; font-size:24px; text-transform:uppercase; color:#fbb907; font-weight:600; padding:20px 0px;}
+nav{width:auto; float:right;}
+nav ul{display:table; float:right;}
+nav ul li{float:left;}
+nav ul li:last-child{padding-right:0px;}
+nav ul li a{color:#fbb907; font-size:18px; padding: 25px 20px; display:inline-block; transition: all 0.5s ease 0s;}
+nav ul li a:hover{background-color:#fbb907; color:#333333; transition: all 0.5s ease 0s;}
+nav ul li a:hover i{color:#333333; transition: all 0.5s ease 0s;}
+nav ul li a i{padding-right:10px; color:#fbb907; transition: all 0.5s ease 0s;}
+/* End Menu Area css
+============================================================================================ */
+/*---------------------------------------------------- */
+/*---------------------------------------------------- */
+/* Banner Area css
+============================================================================================ */
+.container-portada {width: 100%; height: 400px; position: center; background-image: url(../img/banner/banner.jpg); background-size: 120%; }
+.container-portada-1 {width: 100%; height: 200px; position: center; background-image: url(../img/banner/banner2.png); background-size: 120%; }
+.container-details{width: 100%; max-width: auto; height: 100%; margin: auto; }
+.details{width: 100%; max-width: 500px; height:0px; position: relative; top: auto; margin: auto ; color: white; }
+.details h1{font-size: 40px; font-weight: 100; }
+.details p{margin-top: 10px; font-size: 20px; }
+h1 span {background: #fbb907; border-radius: 8px; color: #333333; padding-left: 4px; padding-right: 4px; padding-bottom: 5px; padding-top: 2px; }
+/* End Banner Area css
+============================================================================================ */
+/*---------------------------------------------------- */
+/*---------------------------------------------------- */
+/* Index css
+============================================================================================ */
+.container-conte {
+	width: 1200px;
+	margin: auto;
+	margin-top: 40px;
+}
+
+.fotos-1 {
+    width: 100%;
+    margin: 0 auto;
+}
+
+#container:after {
+    content: " ";
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+#container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+#container div {
+    width: 28%;
+    height: auto;
+    -webkit-transition: -webkit-transform 1s;
+    display: inline;
+    float: left;
+    margin: 0px 3% 0 0;
+    padding: 0;
+}
+
+#container div img {
+    width: 100%;
+    height: auto;
+    box-shadow: 0 0 10px #666;
+    border: 5px solid #FFF
+}
+
+#container div img~span {
+    width: 100%;
+    display: block;
+    opacity: 0;
+    -webkit-transition: opacity 1s;
+    margin: 0;
+    padding: 2px 5px;
+    color: #FFF;
+    background: rgba(0, 0, 0, 0.7);
+    box-shadow: 0 0 10px #666;
+    text-align: center;
+}
+
+#container div img:hover+span {
+    opacity: 1;
+}
+
+#container:hover div {
+    opacity: 0.2;
+    -webkit-transform: scale(0.7);
+    -ms-transform: scale(0.7);
+    transform: scale(0.7);
+}
+
+#container:hover div:hover {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+}
+/* End Index css
+============================================================================================ */
+/*---------------------------------------------------- */
+/*---------------------------------------------------- */
+/* Footer Area css
+============================================================================================ */
+.footer_area {background: #000; padding-top: 100px; padding-bottom: auto; background-color:#333333; }
+.container-text{margin:0px; padding:0px; font-family: 'Open Sans', sans-serif; color:#fbb907; font-size:18px; padding: 20px 20px; }
+.fusion-footer {
+    --footer_area_padding-top: 40px;
+    --footer_area_padding-bottom: 40px;
+    --footer_area_padding-left: 0px;
+    --footer_area_padding-right: 0px;
+    --footer_divider_line-flex: block;
+    --footer_divider_line_size: 4px;
+    --footer_divider_line_style: solid;
+    --footer_widgets_padding: 15px;
+}
+element.style {
+    position: relative;
+    z-index: 3;
+}
+html:not(.avada-has-site-width-percent) #main, html:not(.avada-has-site-width-percent) .fusion-footer-copyright-area, html:not(.avada-has-site-width-percent) .fusion-footer-widget-area, html:not(.avada-has-site-width-percent) .fusion-sliding-bar-position-bottom .fusion-sliding-bar, html:not(.avada-has-site-width-percent) .fusion-sliding-bar-position-top .fusion-sliding-bar, html:not(.avada-has-site-width-percent) .tfs-slider .slide-content-container {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.layout-wide-mode.avada-has-100-footer .fusion-footer-copyright-area>.fusion-row {
+    max-width: 100%!important;
+}
+media="only screen and (max-width: 1025px)"
+.fusion-row {
+    margin: 0 auto;
+    zoom: 1;
+}
+/* End Footer Area css
+============================================================================================ */
+/*===========================================================================================*/
+/*===========================================================================================*/
+.page-content {
+	border: 1px  red;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	float: left;
+	padding: right;
+}
+
+.page-center {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.product-container {
+	align: center;
+	padding: 2px 16px;
+}
+
+.product-container:hover {
+	box-shadow: 0 8px 16px 0 black;
+}
+
+.product-container {
+	align: center;
+	left: 10px;
+	right: 10px;
+}
+
+
+/*Contenido Servicios*/
+
+/* El texto y las imagenes se iran cambiando a medida que el proyecto avance esto es solo una prueba.*/
+
+/*Contenedor Principal*/
+
+.servicios{
+    text-align: left;
+    font-family: 'Open Sans', sans-serif;
+}
+/* Contenedores Img y Texto */
+
+.contenedor_d{
+    display: flex;
+    width: 60%;
+    margin: auto;
+    justify-content: flex-start;
+    margin-top: 20px;
+}
+.contenedor_i{
+    display: flex;
+    width: 60%;
+    margin: auto;
+    justify-content: flex-start;
+}
+
+/* Contenedores secundarios imagen y personalización de las mismas */
+
+.imag{
+    width: 50%;
+    height: 50%;
+    margin: auto;
+    margin-top: 40px;
+    position: relative;
+}
+
+.imag img{
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+
+/* Contenedores secundarios texto y personalización del mismo */
+
+.texto_s{
+    width: 50%;
+    height: 50%;
+    margin-bottom: 5px;
+    border-radius: 8px;
+}
+.contenedor_d .texto_s{
+    margin-top: 30px;
+    margin-left: 5px;
+    margin-right: 30px;
+}
+.contenedor_i .texto_s{
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-right: 5px;
+}
+.texto_s h2{
+    text-align: left;
+    color:#fbb907;
+    font-weight: 1000;
+}
+.texto_s p{
+    width: 100%;
+    height: 100%;
+    display: block;
+    font-size:16px;
+    text-align: justify;
+    color:#333333;
+    font-weight: 550;
+}
+/*Aqui usamos el transform: translate para esconder el texto cuando desparece el overlay */
+.texto_o {
+    color: #fbb907;
+    font-size: 16px;
+    font-weight: 550;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }
+/* Overlay imagenes */
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #00775a;
+    border-radius: 8px;
+  }
+  
+  .imag:hover .overlay {
+    opacity: 1;
+  }
+  /* Responsive Servicios */
+@media screen and (max-width: 1200px){
+  .imag{
+      margin-top: 25%;
+  }
+}
+@media screen and (max-width: 992px){
+  .imag{
+      margin-top: 40px;
+  }
+  .texto_s p{
+      font-weight: 400;
+      font-size: 10px;
+  }
+  .texto_s h2{
+      font-weight: 800;
+      font-size: 12px;
+  }
+    }
+@media screen and (max-width: 768px){
+  .texto_s{
+      display: none;
+  }
+  .imag{
+      width: 100%;
+      height: 100%;
+  }
+}
+
+/* End Servicios
+============================================================================================ */
+/*===========================================================================================*/
+/*===========================================================================================*/
+/* Start Contact
+============================================================================================ */
+/*En el primer apartado ajustamos el formulario para que quede centrado y le ponemos un poco de color de fondo*/
+a.linkemail{
+  color: #fbb907;
+}
+/*En el primer apartado ajustamos el formulario para que quede centrado y le ponemos un poco de color de fondo*/
+.contactall{
+  padding:20px;
+  margin-left: 10%;
+  margin-right: 10%;
+  background-color:#00775a;
+}
+/*Seguidamente ajustamos dentro el contenido y gregamos un grid para indicar columnas, y para indicar cuantas queremos usamos el template*/
+/*Para usar el grid template, como en este caso queremos 2 columnas ponemos 50% 50%, si quisiesemos 3 seria 33.3% 33.3% 33.3%*/
+.contactall .contact10{
+  position:relative;
+  width:100%;
+  display: grid;
+  grid-template-columns:50% 50%;
+}
+/*Ahora ajustamos el "col", que da lugar a otra caja que agrupa el contenido de cada input y asi es mas facul colocar el conjunto*/
+.contactall .contact10 .col{
+  position:relative;
+  width:100%;
+  margin:30px 0px 10px;
+}
+/*Y por ultimo ajustar la caja mas "pequeña", que es donde se encuentra el contenido para agregar datos*/
+/*Agregamos color a las indicaciones para agregar los datos*/
+.contactall .contact10 .inputBox{
+  position: relative;
+  width:100%;
+  height: 40px;
+  color: #fbb907;
+}
+/*Ahora integramos los inputs al css para hacerlos mas amigables*/
+/*Indicamos todo lo que queremos editar, en este caso es donde introducimos los datos*/
+/*Lo mas importante para editar estos campos es poner transparencia, y quitar los bordes por defecto*/
+/*el z-index es para superponer el contenido al resto de "capas" decorativas que hemos puesto, y así podemos ver lo que se escribe*/
+.contactall .contact10 .inputBox input,
+.contactall .contact10 .inputBox.textarea textarea{
+  position: absolute;
+  width: 100% ;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  padding: 0px 10px;
+  z-index: 1;
+  color: #002e5b;
+}
+/*Colocamos las palabras que vienen por defecto escritas en el formulario como guía, las dejamos colocadas y le agregamos una corta transición para 
+que se puedan seguir viendo al poner la información y no perder la guía*/
+.contactall .contact10 .inputBox .info{
+  position: absolute;
+  top: 0;
+  left: 0;
+  line-height: 48px;
+  font-size: 18px;
+  padding: 0 10px;
+  display: block;
+  transition: 0.5s;
+}
+/*Con esto ponemos la guía encima de donde colocamos la información, para que la información no la solape*/
+/*Con input focus indicamos que queremos editar del subnivel del input, en este caso la información del form, y valid se usa para que despues de 
+introducir datos, y se clicke fuera no se mueva*/
+.contactall .contact10 .inputBox input:focus + .info,
+.contactall .contact10 .inputBox input:valid + .info{
+  top:-35px;
+  left: -10px;
+}
+/*Aqui editamos la línea que habiamos agregado en el html para usarlo como guía para escribir en el formulario*/
+.contactall .contact10 .inputBox .line{
+  position: absolute;
+  bottom: 0;
+  display: block;
+  width:100%;
+  height: 2px;
+  background: #fbb907;
+  transition: 0.5s;
+}
+/*Con esto hacemos que la línea ocupe todo el campo en el que se escribe, para tener una pequeña animación y que nos sirva de guía*/
+/*Con input focus indicamos que queremos editar del subnivel del input, en este caso la información del form, y valid se usa para que despues de 
+introducir datos, y se clicke fuera no se mueva*/
+.contactall .contact10 .inputBox input:focus ~ .line,
+.contactall .contact10 .inputBox input:valid ~ .line{
+  height: 100%;
+}
+/*Ajustamos un poco el tamañp de la caja al hacer click*/
+.contactall .contact10 .inputBox.textarea{
+	padding: 20px 10px;
+}
+/*Con esto quitamos los añadidos de abajo izquierda del text area que reajustan el tamaño*/
+.contactall .contact10 .inputBox.textarea textarea{
+  height: 100%;
+  resize: none;
+}
+/*Reajustamos el texto de informacion cuando clickamos para ñadir datos*/
+/*Con input focus indicamos que queremos editar del subnivel del input, en este caso la información del form, y valid se usa para que despues de 
+introducir datos, y se clicke fuera no se mueva*/
+.contactall .contact10 .inputBox textarea:focus + .info,
+.contactall .contact10 .inputBox textarea:valid + .info{
+  top:-35px;
+  left: -10px;
+  resize: none;
+}
+/*Por ultimo hacemos que la linea ocupe el campo de texto cuando queramos agregar datos*/
+.contactall .contact10 .inputBox textarea:focus ~ .line,
+.contactall .contact10 .inputBox textarea:valid ~ .line{
+  height: 100%;
+}
+input[type="submit"]{
+  border: none;
+  padding: 7px 35px;
+  cursor: pointer;
+  outline: none;
+  background: #fbb907;
+  color: #002e5b;
+  font-size: 18px;
+  border-radius: 2px;
+  transition: 0.5s;
+  border-radius:20px;
+}
+input[type="reset"]{
+  border: none;
+  padding: 7px 35px;
+  cursor: pointer;
+  outline: none;
+  background: #fbb907;
+  color: #002e5b;
+  font-size: 18px;
+  border-radius: 2px;
+  transition: 0.5s;
+  border-radius:20px;
+}
+/*Edición e inserción de mapa*/
+.contactall .contact10 .maps{
+  margin-top:  5px;
+  width: 100%;
+  height: 100%;
+}
+.contactall .contactmap{
+  position:relative;
+  width:100%;
+  height: 300px;
+}
+.contactall .contactmap .maps .map{
+  border-radius:20px;
+}
+@media(max-width: 460px){
+    .contactall .contact10 .inputBox .info{
+        font-size: 10px;
+    }
+}
+/* End Contact
+============================================================================================ */
+/*===========================================================================================*/
+/*===========================================================================================*/
+/* Productos css
+============================================================================================ */
+.bono{
+	  margin-top: 30px;
+    margin-left: 5px;
+    margin-right: 30px;
+}
+.texto_1{
+	width: 100%;
+    height: 100%;
+    font-size:16px;
+    text-align:justify;
+    color:#9c0c0c;
+    font-weight: 550;
+
+}
+.cable{
+	width: 100%;
+    height: 100%;
+    font-size:16px;
+    text-align:justify;
+    color:#9c0c0c;
+    font-weight: 550;
+
+}
+
+.contenedor-gal{
+  width: 800px; 
+  height: 320px;
+  overflow: hidden;
+  margin: 50px auto;
+  box-shadow: 0 0 10px 1px rgba(0,0,0,0.35);
+
+}
+.contenedor-gal li{
+  position: relative;
+  display: block;
+  width: 160px;
+  float:left;
+  box-shadow: 0 0 25px 10px rgba(0,0,0,0.5);
+  transition: all 0,5s;
+}
+
+.contenedor-gal ul:hover li{
+  width:40px;
+  filter:brightness(50%);
+}
+.contenedor-gal ul li:hover{
+  width: 640px;
+  filter: brightness(100%);
+}
+.contenedor-gal li img{
+  display: block;
+  width: 640px;
+  height: 100%;
+}
+.titulo-imagen{
+  background: black ;
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  display: block;
+  transition: all 0.5s ease;
+  animation: cambiar-color 10s linear infinite;
+  background-size: 400% 400%;
+}
+
+@keyframe cambiar-color{
+  0%{
+      background-position: 0%, 50%;
+  }
+  50%{
+      background-position: 100%, 50%;
+  }
+  100%{
+      background-position: 0%, 100%;
+  }
+}
+.titulo-imagen a{
+  display: block;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  padding: 20px;
+  font-size: 20px;
+  text-shadow: 0 1px 2px #000;
+  transition: all 0.5s ease;
+}
+.contenedor-gal ul li:hover .titulo-imagen{
+  top:0%;
+  box-shadow: 0 0 25px 10px #000);
+}
+.titulo-imagen:hover a{
+  transform: scale(1.1);
+  transition: all 0.5s ease;
+}
+.titulo-imagen:active{
+  background: white
+}
+
+.imag-p{
+  width: 200px; height: 200px;
+  transition-delay: 2s,0s;
+  transition-duration: 6s,4s;
+  transition-timing-function: ease;
+}
+.imag-p{
+    width: 50%;
+    height: 50%;
+    margin: auto;
+    margin-top: 40px;
+    position: relative;
+}
+
+.imag-p img{
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+.lector_2{
+  width: 100%;
+  height: 100%;
+  font-size:16px;
+  text-align:justify;
+  color:#9c0c0c;
+  font-weight: 550;
+}
+
+
+
+.cable_1{
+  width: 100%;
+    height: 100%;
+    font-size:16px;
+    text-align: justify;
+    color:#9c0c0c;
+    font-weight: 550;
+}
+
+
+.herramientas{
+	width: 100%;
+    height: 100%;
+    font-size:16px;
+    font-weight: 550;
+
+
+}
+.herramientas_2{
+  width: 100%;
+    height: 100%;
+    font-size:16px;
+    color:#9c0c0c;
+    font-weight: 550;
+    text-align: justify;
+}
+.intel_2{
+	width: 100%;
+    height: 100%;
+    font-size:16px;
+    text-align: justify;
+    color:#9c0c0c;
+    font-weight: 550;
+}
+/* End Productos css
+============================================================================================ */
+/*===========================================================================================*/
+/*===========================================================================================*/
+/* login css
+============================================================================================ */
+.contenedor{
+    width: auto;
+    padding: 15px;
+}
+.formulario{
+	background-color: whitesmoke;
+    margin-top: 100px;
+}
+.icon-a{
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    padding-top: 5px;
+}
+input[type="text"], input[type="password"], input[type="mail"]{
+    font-size: 24px;
+    width: auto;
+    padding: 12px;
+    border: none;
+}
+.input-contenedor{
+	 width: auto;
+	 margin-bottom: 13px;
+   border: 1px solid whitesmoke;
+   margin-left: 40px;
+   text-align: center;
+}
+.button{
+	border: none;
+    width: 100%;
+    font-size: 24px;
+    color: whitesmoke;
+    background-color: #002e5b;
+    padding: 15px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.button:hover{
+    background-color: lightskyblue;
+}
+p{
+    text-align: center;
+}
+.link{
+    text-decoration: none;
+    color: #002e5b;
+    font-weight: 600px;
+}
+.link:hover{
+    color: lightskyblue;
+}
+
+@media(min-width: 768px){
+    .formulario{
+        margin-top: 150px;
+        width: 500px;
+        margin: auto;
+        border-radius: 2%;
+    }
+}
+/* End login css
+============================================================================================ */
+/*===========================================================================================*/
+/*===========================================================================================*/
+/* Proyectos css
+============================================================================================ */
+section #proyecto{
+	width:100%; max-width:1200px; margin:0px auto; display:table; position:relative;
+	}
+#container_proyect{
+    width: 90%;
+    margin: 0px auto;
+}
+
+#container_proyect div{
+    width: 28%;
+    height: auto;
+    display: inline;
+    float: left;
+    margin: 30px 5% 0 0;
+}
+#container_proyect div img{
+    width: 100%;
+    height: auto;
+    border: 5px solid #00775a;
+}
+#container_proyect div img.imagenes{
+    width: 100%;
+    height: 300px;
+}
+
+#container_proyect div span{
+    width: 100%;
+    display: block;
+    margin-top: 10px;
+    padding: 2px 5px;
+    color: #333333;
+    text-align: justify;
+}
+#container_proyect div span h2{
+    text-align: center;
+    color: #fbb907;
+}
+#container_proyect div span p{
+    font-size: 16px;
+}
+  /* Responsive Proyectos */
+  @media screen and (max-width: 1200px){
+    #container_proyect div span h2{
+        font-size: 20px;
+    }
+      }
+  @media screen and (max-width: 992px){
+    #container_proyect div span p{
+        font-size: 14px;
+    }
+    #container_proyect div span h2{
+        font-size: 18px;
+    }
+    #container_proyect div img.imagenes{
+        width: 100%;
+        height: 200PX;
+    }
+      }
+  @media screen and (max-width: 768px){
+    #container_proyect{
+        width: 50%;
+        margin: 30px auto;
+    }
+    #container_proyect div{
+        display: inline;
+        float: none;
+        margin: 30px 5% 0 0;
+    }
+    #container_proyect div span{
+        margin-bottom: 20px;
+    }
+  }
+/* End Proyectos css
+============================================================================================ */
+/*============================================================================================ */
+/*============================================================================================ */
+/* Blog css
+============================================================================================ */
+.post-list{
+	display: flex;
+	min-height: 100vh;
+	align-items: center;
+	justify-content: center;
+	padding: 10px 15px;
+}
+.content{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 20px;
+	max-width: 1000px;
+	margin: auto;
+}
+.post-img-1{
+	background: url(../img/img1.png);
+	width: 100%;
+	height: 200px;
+	background-size: cover;
+	background-position: center;
+	transition: .2s;
+}
+.post-img-2{
+	background: url(../img/img2.jpg);
+	width: 100%;
+	height: 200px;
+	background-size: cover;
+	background-position: center;
+	transition: .2s;
+}
+.post-img-3{
+	background: url(../img/img3.jpeg);
+	width: 100%;
+	height: 200px;
+	background-size: cover;
+	background-position: center;
+	transition: .2s;
+}
+.post{
+	box-shadow: 0 1px 6px 1px rgba(0, 0, 0, .15);
+	transition: .2s;
+}
+.post:hover{
+	transform: translateY(-4px;
+	box-shadow: 0 1px 14px 2px rgba(0, 0, 0, .15);
+}
+.post-header{
+	width: 100%;
+	height: 200px;
+	overflow: hidden;
+	cursor: pointer;
+}
+.post:hover .post-img-1
+.post:hover .post-img-2
+.post:hover .post-img-3{
+	transform: scale(1.1);
+}
+.post-body{
+	padding: 15px;
+	text-align: center;
+}
+.post-body span{
+	display: incline-block;
+	color: #999;
+	margin-bottom: 10px;
+}
+.post-body h2{
+	margin-bottom: 15px;
+}
+.post-body p{
+	line-height: 1.5;
+	margin-bottom: 20px;
+}
+.post-body .post-link{
+	display: block;
+	text-decoration: none;
+	padding: 10px;
+	background: #2b6ebb;
+	color: #fff;
+	width: 50%;
+	margin: auto;
+	border-radius: 20px;
+	box-shadow: 1px 2px 6px 1px rgba(0, 0, 0, .1);
+	transition: .2s;
+}
+.post-boy .post-link:hover{
+	background: #3378c7;
+	box-shadow: 1px 2px 6px 1px rgba(0, 0, 0, .2);
+	transform: translateY(-2px);
+}
+@media (max-width: 830px){
+	.content{
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+@media (max-width: 600px){
+	.content{
+		grid-template-columns: repeat(1, 1fr);
+	}
+}
+
+/* End Blog css
+============================================================================================ */

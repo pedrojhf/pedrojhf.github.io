@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/png">
+    <script src="js/main.js"></script>
+    <title>Registro</title>
+    <style> body { background-color: #00775a; }</style>
+</head>
+<body>
+    <header>
+        <section>
+            <a href="index.html" id="logo" target="_blank">Open System Consulting</a>
+            <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="proyecto.html">Proyectos</a></li>
+                <li><a href="producto.html">Producto</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contacto</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+            </nav>
+    </header>
+    <div class="container-portada-1">
+        <div class="capa-gradient">
+            <div class="container-details">
+                <div class="details">
+                    <h1><span>Registro</span></h1>
+                </div>
+            </div>
+        </div>
+    </div><br><br><br>
+    <form action="validar.php" method="post" class="formulario" onsubmit="return registro()">
+        <h1> REGISTRO</h1>
+        <div class="contenedor">
+            <div class="input-contenedor">
+                <img class="icon-a" src="img/icon/user.png">
+                <input type="text" id="usuario" placeholder="Introduzca su nombre completo">
+            </div>
+            <div class="input-contenedor">
+                <img class="icon-a" src="img/icon/email.png">
+                <input type="text" id="mail" placeholder="Correo Electrónico">
+            </div>
+            <div class="input-contenedor">
+                <img class="icon-a" src="img/icon/passwd.png">
+                <input type="password" id="password" placeholder="Contraseña">
+            </div>
+            <div class="input-contenedor">
+                <img class="icon-a" src="img/icon/passwd.png">
+                <input type="password" id="rpassword" placeholder="Repita su Contraseña">
+            </div>
+            <input type="submit" value="Registro" class="button">
+            <p>Al registrar, acepta nuestras condiciones de uso y politica de privacidad.</p>
+            <p>¿Ya tiene cuenta?<a class="link" href="login.html">Iniciar Sesión</a></p>
+        </div>
+    </form>
+</body>
+<br><br><br><br>
+    <footer class="footer_area">
+                <div class="container-text">
+                    <p>Información legal de la empresa</p>
+                </div>
+                <div class="fusion-footer">
+    <footer id="footer" class="fusion-footer-copyright-area" style="position: relative; z-index: 3;">
+        <div class="fusion-row">
+            <div class="fusion-copyright-content">
+                <div class="fusion-copyright-notice">
+                    © Open System Consulting <script>document.write(new Date().getFullYear());</script>   |   <a href="#">Aviso Legal</a>   |   <a href="#">Política de Privacidad</a>   |   <a href="#">Política de Cookies</a>   |   <a href="contacto.html">Mapa del sitio</a>   </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </footer>
+</html>
